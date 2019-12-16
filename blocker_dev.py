@@ -2,7 +2,6 @@
 """
 Created on Tue Aug  6 12:09:36 2019
 
-@author: ngrasley
 """
 import numpy as np
 import pandas as pd
@@ -102,7 +101,7 @@ class BlockDB(PairsDB):
             
         self.cursor.execute('DROP TABLE training_temp')
         self.conn.commit()
-        
+
 def block_dataframe(record_df1, record_df2, blocks):
     pairs = []
     index_name1 = record_df1.index.name
